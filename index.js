@@ -20,7 +20,7 @@ async function fetchrec() {
         <p class="ing"><span style="font-weight:800">Ingredients:</span> ${meal.strIngredient1},${meal.strIngredient2},${meal.strIngredient3},${meal.strIngredient4}...</p>
         <p class="description">${meal.strInstructions}</p>    
         <div class="btns">    
-        <button>View Recipe  ↗</button>
+                <a href = "mealdes.html" onclick="selected('${meal.idMeal}')">    <button >View Recipe ↗</button></a>
         <button onclick="window.open('https://www.youtube.com/watch?v=wuZffe60q4M','_blank')"><i class="fa fa-play"></i>Watch Video</button></div>
 
         </div>`
@@ -48,3 +48,8 @@ async function fetchcat(){
     });
 }
 fetchcat();
+function selected(meal){
+    localStorage.setItem("selectedMeal", meal); // use a string key
+    const getit = localStorage.getItem("selectedMeal");
+    console.log("Saved meal:", getit);
+}
