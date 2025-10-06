@@ -45,7 +45,6 @@ Tasty Bites is a modern recipe web app that helps food lovers discover, search, 
 
 - Recipe data from [TheMealDB](https://www.themealdb.com/)
 - Icons from [Font Awesome](https://fontawesome.com/)
-- Images from [Unsplash](https://unsplash.com/)
 
 ---
 
